@@ -18,11 +18,10 @@
 
             <Spinner
                 android:id="@+id/propertyType"
-                android:paddingTop="20dp"
-                android:layout_width="wrap_content"
+                android:layout_width="288dp"
                 android:layout_height="wrap_content"
-                android:entries="@array/propertyType">
-            </Spinner>
+                android:entries="@array/propertyType"
+                android:paddingTop="20dp"></Spinner>
         </TableRow>
 
         <TableRow>
@@ -37,15 +36,27 @@
             </Spinner>
         </TableRow>
 
-        <TableRow>
-            <TextView android:text="Date and time: "/>
-            <EditText android:inputType="date"
-                      android:hint="MM-dd-yyyy"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="109dp">
+
+            <TextView
+                android:text="Date and time: "
+                android:layout_gravity="center_vertical"/>
+
+            <DatePicker
+                android:id="@+id/dateAndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
         </TableRow>
 
         <TableRow>
             <TextView android:text="Monthly rent price: " />
-            <EditText android:inputType="number" />
+            <EditText android:id="@+id/moneyRentPrice"
+                      android:inputType="number" />
         </TableRow>
 
         <TableRow>
