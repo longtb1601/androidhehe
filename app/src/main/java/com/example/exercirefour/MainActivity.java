@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         Button okBtn = findViewById(R.id.okButton);
         final EditText moneyRentPrice = findViewById(R.id.moneyRentPrice);
         final DatePicker dateAndTime = findViewById(R.id.dateAndTime);
+        System.out.println("hihi");
 
         dateAndTime.setCalendarViewShown(false);
 
