@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <TextView android:text="Property Type: " />
+
+            <Spinner
+                android:id="@+id/propertyType"
+                android:paddingTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/propertyType">
+            </Spinner>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Bedrooms: " />
+
+            <Spinner
+                android:id="@+id/bedRoom"
+                android:paddingTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/bedRoom">
+            </Spinner>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Date and time: "/>
+            <EditText android:inputType="date"
+                      android:hint="MM-dd-yyyy"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Monthly rent price: " />
+            <EditText android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Furniture types: " />
+
+            <Spinner
+                android:id="@+id/furnitureTypes"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/furnitureTypes">
+            </Spinner>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Note: " />
+            <EditText android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Name of reporter: " />
+            <EditText android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/okButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ok" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel" />
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
